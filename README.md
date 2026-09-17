@@ -63,8 +63,8 @@ drip-and-garlic/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/rehan-devs/drip-and-garlic.git
-   cd drip-and-garlic
+   git clone https://github.com/aloll0/Menu-aloll0.git
+   cd Menu-aloll0
 Install dependencies
 
 ```bash
