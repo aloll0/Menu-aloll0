@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Drip & Garlic — The Shawarma Joint Your City Needed",
+  title: "Menu & aloll0 — The Shawarma Joint Your City Needed",
   description:
     "Unapologetically bold shawarma. Wrapped tight. Dripping right. Open late in Brooklyn, NY.",
 };

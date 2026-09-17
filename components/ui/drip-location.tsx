@@ -29,13 +29,13 @@ const defaultHours = [
 ];
 
 export function DripLocation({
-  heading = "Find the drip.",
-  address = "420 Pita Lane, Brooklyn, NY 11201",
-  phone = "(718) 555-DRIP",
-  instagram = "@dripandgarlic",
+  heading = "Find the Menu@aloll0.",
+  address = "Toreil, Mansoura, Dakahlia, Egypt",
+  phone = "+201010428244",
+  instagram = "@aloll0",
   hours = defaultHours,
-  mapLocation = "Brooklyn, NY",
-  mapCoordinates = "40.6892° N, 73.9857° W",
+  mapLocation = "Toreil, Mansoura, Dakahlia, Egypt",
+  mapCoordinates = "31.04° N, 31.39° E",
   className,
 }: DripLocationProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -145,10 +145,8 @@ export function DripLocation({
       className={cn("relative w-full bg-[#0A0A0A] py-16 md:py-20", className)}
     >
       <style dangerouslySetInnerHTML={{
-        __html: `.btn-sauce { background: linear-gradient(180deg, #F5A623, #E88D2A 50%, #C76D1A); color: #0C0A09; font-weight: 800; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(232,141,42,0.3); transition: all 0.3s ease; } .btn-sauce:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(232,141,42,0.4); } .btn-charcoal { background: linear-gradient(180deg, #27272A, #18181B); color: #FFF5E6; font-weight: 700; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: all 0.3s ease; } .btn-charcoal:hover { transform: translateY(-2px); background: linear-gradient(180deg, #3F3F46, #27272A); } .hours-card { background: linear-gradient(145deg, #1C1917, #0C0A09); border: 1px solid rgba(255,255,255,0.04); border-left: 3px solid #E88D2A; box-shadow: 0 12px 40px -10px rgba(0,0,0,0.6); border-radius: 14px; } .btt { padding: 0.7em 1.4em; border: none; border-radius: 5px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; color: #E88D2A; font-size: 11px; position: relative; overflow: hidden; outline: 2px solid #E88D2A; background: transparent; transition: all 500ms; } .btt:hover { color: #0C0A09; transform: scale(1.05); outline-color: #F5A623; box-shadow: 4px 5px 17px -4px #E88D2A; } .btt::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background: #E88D2A; transform: skewX(45deg); z-index: -1; transition: width 500ms; } .btt:hover::before { width: 250%; }`,
+        __html: `.btn-sauce { background: #E88D2A; color: #0C0A09; font-weight: 800; border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(232,141,42,0.25); transition: all 0.2s ease; } .btn-sauce:hover { transform: translateY(-2px); background: #F5A623; box-shadow: 0 6px 20px rgba(232,141,42,0.35); } .btn-charcoal { background: #1C1917; color: #FFF5E6; font-weight: 700; border: 1px solid #27272A; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.4); transition: all 0.2s ease; } .btn-charcoal:hover { transform: translateY(-2px); background: #27272A; } .hours-card { background: #141210; border: 1px solid rgba(255,255,255,0.06); border-left: 3px solid #E88D2A; box-shadow: 0 12px 40px -10px rgba(0,0,0,0.6); border-radius: 14px; } .btt { padding: 0.7em 1.4em; border: none; border-radius: 5px; font-weight: bold; letter-spacing: 3px; text-transform: uppercase; cursor: pointer; color: #E88D2A; font-size: 11px; position: relative; overflow: hidden; outline: 2px solid #E88D2A; background: transparent; transition: all 500ms; } .btt:hover { color: #0C0A09; transform: scale(1.05); outline-color: #F5A623; box-shadow: 4px 5px 17px -4px #E88D2A; } .btt::before { content: ""; position: absolute; left: -50px; top: 0; width: 0; height: 100%; background: #E88D2A; transform: skewX(45deg); z-index: -1; transition: width 500ms; } .btt:hover::before { width: 250%; }`,
       }} />
-
-      <div className="absolute inset-0 pointer-events-none" style={{ background: "radial-gradient(ellipse at center, rgba(232,141,42,0.02), transparent 50%)" }} aria-hidden="true" />
 
       <div ref={contentRef} className="relative z-10 max-w-4xl mx-auto px-5 md:px-8">
         <h2 className="text-center mb-2" style={{ color: "#FFF5E6", fontSize: "clamp(1.8rem, 5vw, 3.5rem)", fontWeight: 900, textShadow: "0 4px 16px rgba(232,141,42,0.2)" }}>
@@ -208,7 +206,7 @@ export function DripLocation({
           <button className="btt" onClick={scrollToTop}>↑ Back to Top</button>
         </div>
 
-        <p className="text-[#4A4540] text-[10px] tracking-wider text-center">© 2024 Drip & Garlic. Sauce is life.</p>
+        <p className="text-[#4A4540] text-[10px] tracking-wider text-center">© 2026 Menu & aloll0. Sauce is life.</p>
       </div>
     </section>
   );

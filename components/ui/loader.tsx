@@ -55,7 +55,7 @@ export function Loader({ onComplete }: { onComplete?: () => void }) {
             animate={{ opacity: 0.6 }}
             transition={{ delay: 0.8, duration: 0.6 }}
           >
-            Drip & Garlic
+            Menu & aloll0
           </motion.p>
         </motion.div>
       )}

@@ -35,7 +35,7 @@ const defaultCategories: MenuCategory[] = [
   ]},
 ];
 
-export function MenuBook3D({ categories = defaultCategories, brandName = "DRIP & GARLIC", className }: MenuBook3DProps) {
+export function MenuBook3D({ categories = defaultCategories, brandName = "Menu & aloll0", className }: MenuBook3DProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const sceneRef = useRef<HTMLDivElement>(null);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -241,7 +241,7 @@ export function MenuBook3D({ categories = defaultCategories, brandName = "DRIP &
 
   return (
     <section ref={containerRef} data-section="menu" className={cn("relative w-full h-screen bg-[#0A0A0A] overflow-hidden", className)}>
-      <style dangerouslySetInnerHTML={{ __html: `.mcov { background: linear-gradient(145deg, #1C1917 0%, #0C0A09 100%); box-shadow: 0 60px 120px -30px rgba(232,141,42,0.12), 0 30px 60px -15px rgba(0,0,0,0.9), inset 0 1px 2px rgba(255,255,255,0.05); border: 1px solid rgba(232,141,42,0.08); } .cstr { position:absolute; bottom:0; left:0; right:0; height:3px; background: linear-gradient(90deg, transparent, #E88D2A 30%, #E88D2A 70%, transparent); } .temb { background: linear-gradient(180deg, #F5A623 0%, #E88D2A 50%, #C76D1A 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.8)); } .mpd { background: linear-gradient(180deg, #1A1A1A 0%, #141414 100%); box-shadow: inset 2px 0 6px rgba(0,0,0,0.4); } .psp { position:absolute; left:0; top:5%; bottom:5%; width:2px; background: linear-gradient(180deg, transparent, rgba(232,141,42,0.2) 50%, transparent); }` }} />
+      <style dangerouslySetInnerHTML={{ __html: `.mcov { background: #141210; box-shadow: 0 40px 80px -20px rgba(0,0,0,0.9), inset 0 1px 2px rgba(255,255,255,0.05); border: 1px solid rgba(232,141,42,0.15); } .cstr { position:absolute; bottom:0; left:0; right:0; height:3px; background: #E88D2A; } .temb { color: #E88D2A; } .mpd { background: #18181B; box-shadow: inset 2px 0 6px rgba(0,0,0,0.4); } .psp { position:absolute; left:0; top:5%; bottom:5%; width:2px; background: rgba(232,141,42,0.25); }` }} />
 
       <div ref={sceneRef} className="relative w-full h-full flex items-center justify-center" style={{ perspective: isMobile ? "900px" : "1400px" }}>
         <div ref={menuRef} className="relative" style={{ width: isMobile ? 280 : 400, height: isMobile ? 380 : 540, transformStyle: "preserve-3d", willChange: "transform, opacity, filter" }}>

@@ -51,15 +51,13 @@ export function LocationMap({
         style={{
           rotateX: springRotateX, rotateY: springRotateY,
           transformStyle: "preserve-3d",
-          background: "linear-gradient(145deg, #1C1917 0%, #0C0A09 100%)",
-          border: "1px solid rgba(232,141,42,0.1)",
+          background: "#141210",
+          border: "1px solid rgba(232,141,42,0.12)",
           boxShadow: "0 20px 60px -15px rgba(0,0,0,0.7), 0 0 30px rgba(232,141,42,0.04)",
         }}
         animate={{ height: isExpanded ? 300 : 160 }}
         transition={{ type: "spring", stiffness: 350, damping: 30 }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#E88D2A]/5 via-transparent to-[#E88D2A]/3" />
-
         <AnimatePresence>
           {isExpanded && (
             <motion.div className="pointer-events-none absolute inset-0" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.4, delay: 0.1 }}>
@@ -81,7 +79,6 @@ export function LocationMap({
                   <circle cx="12" cy="9" r="2.5" fill="#0C0A09" />
                 </svg>
               </motion.div>
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/50 via-transparent to-transparent" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -108,7 +105,7 @@ export function LocationMap({
             <motion.div
               className="h-px mt-1"
               style={{
-                background: "linear-gradient(to right, rgba(232,141,42,0.4), transparent)",
+                background: "rgba(232,141,42,0.3)",
                 transformOrigin: "left",
               }}
               animate={{ scaleX: isHovered || isExpanded ? 1 : 0.3 }}

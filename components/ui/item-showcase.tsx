@@ -162,13 +162,13 @@ export function ItemShowcase({ items = defaultItems, onOrderClick, className }: 
             letter-spacing: 0.05em; text-transform: uppercase;
           }
           .order-btn-item {
-            background: linear-gradient(180deg, #F5A623 0%, #E88D2A 50%, #C76D1A 100%);
-            color: #0C0A09; font-weight: 700; padding: 10px 24px; border-radius: 12px;
+            background: #E88D2A;
+            color: #0C0A09; font-weight: 800; padding: 10px 24px; border-radius: 12px;
             font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
-            border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(232,141,42,0.3);
-            transition: all 0.3s ease;
+            border: none; cursor: pointer; box-shadow: 0 4px 15px rgba(232,141,42,0.25);
+            transition: all 0.2s ease;
           }
-          .order-btn-item:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(232,141,42,0.4); }
+          .order-btn-item:hover { background: #F5A623; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(232,141,42,0.35); }
         `,
       }} />
 
@@ -179,7 +179,7 @@ export function ItemShowcase({ items = defaultItems, onOrderClick, className }: 
           className={cn("absolute inset-0 flex items-center justify-center px-5 md:px-12 lg:px-20 invisible", isMobile ? "flex-col gap-5" : "flex-row gap-10 lg:gap-16")}
         >
           {/* Spotlight */}
-          <div ref={(el) => { spotlightRefs.current[i] = el; }} className="absolute pointer-events-none" style={{ background: `radial-gradient(ellipse, ${item.bgAccent || "rgba(232,141,42,0.05)"} 0%, transparent 60%)`, width: "500px", height: "500px", left: isMobile ? "50%" : "25%", top: "50%", transform: "translate(-50%,-50%)", filter: "blur(60px)" }} aria-hidden="true" />
+          <div ref={(el) => { spotlightRefs.current[i] = el; }} className="absolute pointer-events-none rounded-full" style={{ background: item.bgAccent || "rgba(232,141,42,0.05)", width: "400px", height: "400px", left: isMobile ? "50%" : "25%", top: "50%", transform: "translate(-50%,-50%)", filter: "blur(70px)" }} aria-hidden="true" />
 
           {/* Image — NO transform-style for 3D */}
           <div

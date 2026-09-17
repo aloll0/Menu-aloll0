@@ -21,13 +21,13 @@ interface DripHeroProps {
 }
 
 export function DripHero({
-  brandLine1 = "DRIP",
+  brandLine1 = "MENU",
   brandAmpersand = "&",
-  brandLine2 = "GARLIC",
+  brandLine2 = "aloll0",
   tagline = "Wrapped tight. Dripping right.",
   subtitle = "The shawarma joint your city needed.",
-  established = "Est. 2024 • NYC",
-  badge = "OPEN LATE 🔥",
+  established = "Est. 2026 • EGY",
+  badge = "OPEN LATE",
   className,
 }: DripHeroProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -163,7 +163,12 @@ export function DripHero({
             90% { height:0; opacity:0; }
           }
           .grill-glow {
-            background: radial-gradient(ellipse at center, rgba(232,141,42,0.18) 0%, rgba(200,80,20,0.08) 35%, transparent 70%);
+            background: rgba(232,141,42,0.08);
+            border-radius: 9999px;
+            filter: blur(120px);
+            width: 70vw;
+            height: 70vh;
+            margin: auto;
             animation: ember 4s ease-in-out infinite;
           }
           @keyframes ember { 0%,100% { opacity:0.8; transform:scale(1); } 50% { opacity:1; transform:scale(1.06); } }
@@ -176,8 +181,8 @@ export function DripHero({
             text-shadow: 0 6px 30px rgba(232,141,42,0.35), 0 2px 6px rgba(0,0,0,0.6);
           }
           .badge-glass {
-            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.03) 100%);
-            backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255,255,255,0.1);
             box-shadow: 0 8px 32px rgba(0,0,0,0.5);
           }
